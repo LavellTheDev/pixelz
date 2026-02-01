@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "postcss-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "name": "pixelplanet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "postcss ./src/css/tailwind.css -o ./public/output.css --watch"
+  },
+  "keywords": [
+    "pixel planet",
+    "pixelplanet",
+    "pixel",
+    "planet",
+    "web development",
+    "tech",
+    "web design",
+    "creative",
+    "small business web design",
+    "boston "
+  ],
+  "author": "Pixel Planet",
+  "license": "ISC",
+  "description": "pixel planet - pixels for the people"
+}

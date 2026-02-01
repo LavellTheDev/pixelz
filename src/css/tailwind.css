@@ -1,0 +1,9 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable selector-class-pattern */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*All additional site wide code below*/
