@@ -6,23 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="/src/css/style.css">
-<!-- 1. Include the dependency library (Three.js in this case) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<!-- 2. Include the Vanta effect script (e.g., BIRDS) -->
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <!-- 1. Include the dependency library (Three.js in this case) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <!-- 2. Include the Vanta effect script (e.g., BIRDS) -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- Main Nav -->
    <header>
     <section>
-
-
       <nav id="stickyBar" class="showNav dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="bg-black border-b border-white/50 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-10 ">
         <a href="https://pxlpla.net" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/public/assets/logos/pixellogowhite.svg" class="h-8 fill-white " alt="Pixel Planet Logo">
+            <img src="/public/assets/logos/pixellogowhite.svg" class="h-6 fill-white" alt="Pixel Planet Logo">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
         </a>
         <div class="flex space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -34,7 +36,7 @@
           </button>
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-white">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-white text-sm">
             <li>
               <a href="#" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
             </li>
@@ -46,6 +48,9 @@
             </li>
             <li>
               <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="bg-sky-400 text-white hover:bg-sky-300 py-2 px-4 text-sm font-semibold transition duration-300 ease-in-out rounded-md transform hover:scale-105 hover:shadow-lg">Call Today</a>
             </li>
           </ul>
         </div>
@@ -60,8 +65,8 @@
             </div>
             
             <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-              <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Technology That Serves Humanity</h1>
-              <p class="text-lg text-gray-300 mb-8">Helping small businesse's start & medium companies grow.</p>
+              <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Intelligent Design for Modern Businesses</h1>
+              <p class="text-lg text-white font-semibold mb-8">Helping small businesse's start & medium companies grow.</p>
               <a href="#" class="bg-sky-400 text-gray-900 hover:bg-sky-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Get Started</a>
             </div>
           </div>
@@ -72,11 +77,11 @@
    <!-- Main Content Below -->
     <main>
       <section id="elevatorPitch" >
-        <div class="h-3/4 bg-white">
+        <div class="h-3/4 bg-black">
           <div class="relative z-10 flex flex-col items-center h-full text-center content-start">
-            <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-8 ">Navigating <span>Our Galaxy</span></h2>
+            <h2 class="text-3xl md:text-4xl text-white font-bold leading-tight mb-8 ">Navigating <span>Our Galaxy</span></h2>
             <div class="w-2/4 md:w-1/4 border-b-2 border-black mb-8"></div>
-            <p class="text-xl text-black-100 mb-8 px-4 w-full md:w-2/3 leading-normal">We specialize in creating agnostic solutions for your business’s web design and development needs. 
+            <p class="text-xl text-white mb-8 px-4 w-full md:w-2/3 leading-normal">We specialize in creating agnostic solutions for your business’s web design and development needs. 
               All that means is... We find the right tools for the job! 
               By providing custom solutions, we are able to help improve businesses performance, which means more clients and more revenue.</p>
           </div>
