@@ -2,7 +2,7 @@
 window.addEventListener('load', () => {
 VANTA.RINGS({
   el: "#hero",
-  mouseControls: true,
+  mouseControls: false,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.00,
