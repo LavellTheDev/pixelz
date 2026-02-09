@@ -1,0 +1,4 @@
+
+gsap.registerPlugin(SplitText);
+
+let split = SplitText.create("#split", { type: "words, chars" });
