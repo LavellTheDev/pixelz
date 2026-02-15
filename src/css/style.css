@@ -8,12 +8,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #000;
 }
 
 h1{
     text-wrap: balance;
 }
-
 
 #split{
     padding-top: 3rem;
@@ -34,4 +34,50 @@ h1{
 
 #stickBar{
     background-color: black;;
+}
+
+/*Carousel work*/
+
+.clientsCarousel{
+    display: flex;
+    border: 5px solid red;
+    width: 30%;
+    margin: 100px auto;
+    overflow-x: auto; 
+    background-color: ;
+}
+
+.clientsCarousel::-webkit-scrollbar{
+    display: none;
+}
+    
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 40s infinite linear;
+    &:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+    padding-right: 1em;
+    
+}
+
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background-color: cornflowerblue;
+    font: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
 }
