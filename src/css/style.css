@@ -1,10 +1,10 @@
 
 
-#hero{
-    /* padding-bottom: 70px;
+/*#hero{
+     padding-bottom: 70px;
     mask: radial-gradient(70% 70px at bottom,#0000 100%,#000);
-    background-color: #000; */
-}
+    background-color: #000; 
+}*/
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,6 +12,12 @@ body {
 
 h1{
     text-wrap: balance;
+}
+
+
+#split{
+    padding-top: 3rem;
+    overflow: hidden;
 }
 
 #elevatorPitch{
