@@ -9,7 +9,7 @@
     <!-- 1. Include the dependency library (Three.js in this case) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <!-- 2. Include the Vanta effect script (e.g., BIRDS) -->
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script> -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,12 @@
 
         <div id="hero" class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
             <div class="absolute inset-0">
-              <!-- <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" class="object-cover object-center w-full h-full" /> -->
+              <!-- <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" class="object-cover object-center w-full h-full" />  -->
+                  <video autoplay loop muted playsinline class="absolute min-w-full min-h-full object-cover">
+                 <source src="/public/assets/video/andromeda.mp4" type="video/mp4" />
+                 <!-- Fallback text for browsers that do not support the video tag -->
+                     Your browser does not support the video tag.
+                 </video>
               <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
             
@@ -80,23 +85,16 @@
    </header>
    <!-- Main Content Below -->
     <main>
-      <section class="clientsCarousel">
-        <ul class="group">
-          <li class="card">1</li>
-          <li class="card">2</li>
-          <li class="card">3</li>
-          <li class="card">4</li>
-          <li class="card">5</li>
-          <li class="card">6</li>
-        </ul>
-        <ul aria-hidden class="group">
-          <li class="card">1</li>
-          <li class="card">2</li>
-          <li class="card">3</li>
-          <li class="card">4</li>
-          <li class="card">5</li>
-          <li class="card">6</li>
-        </ul>
+      <section class="carouselContainer">
+        <div class="infiniteCarousel">
+          <div>
+          <img src="/public/assets/logos/corpLogo.png" alt="">
+          <img src="/public/assets/logos/meimei.png" alt="">
+          <img src="/public/assets/logos/MLF_yellow_white_transparent.png" alt="">
+          <img src="/public/assets/logos/AMGLogoTrans.png" alt="">
+          <img src="/public/assets/logos/manyi.png" alt="">
+          </div>
+        </div>
       </section>
       <section id="elevatorPitch" >
         <div class="h-3/4 bg-black">

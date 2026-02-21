@@ -37,47 +37,53 @@ h1{
 }
 
 /*Carousel work*/
-
-.clientsCarousel{
+.carouselContainer{
     display: flex;
-    border: 5px solid red;
-    width: 30%;
-    margin: 100px auto;
-    overflow-x: auto; 
-    background-color: ;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; 
 }
 
-.clientsCarousel::-webkit-scrollbar{
-    display: none;
+.infiniteCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    max-width: 1000px;
+    width: 75%;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 30%,
+        #fff 80%,
+        transparent
+    );
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 30%,
+        #fff 80%,
+        transparent
+    );
 }
-    
-.group{
+
+.infiniteCarousel div{
+    width: max-content;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: spin 40s infinite linear;
-    &:hover{
-        animation-play-state: paused;
-        cursor: pointer;
+    flex-wrap: nowrap;
+    gap: 3em;
+}
+
+.infiniteCarousel img {
+    width: auto;
+    height: 75px;
+}
+
+@keyframes move {
+    to {
+        transform: 
+        translate(calc(-50% - 1.5em));
     }
-    padding-right: 1em;
-    
-}
-
-
-.card{
-    flex: 0 0 5em;
-    height: 5em;
-    padding: 1em;
-    background-color: cornflowerblue;
-    font: 3rem;
-    border-radius: .2em;
-    text-align: center;
-    align-content: center;
-}
-
-@keyframes spin {
-    from {translate: 0;}
-    to {translate: -100%;}
 }
